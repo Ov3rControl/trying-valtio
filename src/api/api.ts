@@ -15,16 +15,16 @@ const api = axios.create({
 });
 
 // Simulating a very slow network
-api.interceptors.request.use(
-  async (config) => {
-    // Delay for 3 seconds
-    await new Promise((resolve) => setTimeout(resolve, 3000));
-    return config;
-  },
-  (error) => {
-    return Promise.reject(error);
-  }
-);
+// api.interceptors.request.use(
+//   async (config) => {
+//     // Delay for 3 seconds
+//     await new Promise((resolve) => setTimeout(resolve, 3000));
+//     return config;
+//   },
+//   (error) => {
+//     return Promise.reject(error);
+//   }
+// );
 
 // Authentication
 
